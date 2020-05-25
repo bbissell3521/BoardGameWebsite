@@ -1,0 +1,62 @@
+{
+  "name": "inclass3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "client/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "babel-node server/app.js",
+    "serverdev": "nodemon server/app.js",
+    "client": "webpack --mode production",
+    "clientdev": "webpack --mode development --watch",
+    "clientdevsrv": "webpack-dev-server --mode development --watch --open"
+  },
+  "nodemonConfig": {
+    "execMap": {
+      "js": "babel-node"
+    },
+    "watch": [
+      "server/**/*"
+    ],
+    "ext": "js,mjs"
+  },
+  "private": true,
+  "author": "Blake Bissell",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-transform-async-to-generator": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "@material-ui/core": "^4.9.14",
+    "@material-ui/lab": "^4.0.0-alpha.53",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.1.0",
+    "babel-preset-minify": "^0.5.1",
+    "bootstrap": "^4.4.1",
+    "css-loader": "^3.5.2",
+    "html-webpack-plugin": "^4.2.0",
+    "jquery": "^3.5.0",
+    "nodemon": "^2.0.3",
+    "popper.js": "^1.16.1",
+    "raw-loader": "^4.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "style-loader": "^1.1.3",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
