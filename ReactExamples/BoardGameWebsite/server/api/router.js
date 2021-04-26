@@ -2,7 +2,7 @@
 import fs from 'fs'
 import Express from 'express'
 
-// read in game data from output file from module 2-1
+// read in game data from output file
 const rawGameData = fs.readFileSync('server/api/output.json', { encoding: 'utf8' })
 const fullGames = JSON.parse(rawGameData)
 
